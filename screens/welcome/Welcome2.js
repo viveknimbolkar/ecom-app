@@ -20,7 +20,7 @@ export default function Welcome2({ navigation }) {
             }}
           />
           <View style={styles.body}>
-            <Text style={styles.cardhead}>Engaging Product gallery</Text>
+            <Text style={styles.cardhead}>Engaging Product Gallery</Text>
             <Text style={styles.carddesc}>
               Options are available to choose your best product from the product
               gallery.
