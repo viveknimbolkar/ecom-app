@@ -52,7 +52,7 @@ export default function Login({ navigation }) {
               onChangeText={(password) => setPassword(password)}
             />
             <TouchableOpacity
-              onPress={() => navigation.navigate("ForgetPassword")}
+              onPress={() => navigation.navigate("SelectEmail")}
               style={styles.forgetpassword}
             >
               <Text style={styles.forgetpasswordtext}>Forget Password?</Text>
