@@ -5,7 +5,9 @@ import Welcome1 from "./screens/welcome/Welcome1";
 import Welcome2 from "./screens/welcome/Welcome2";
 import Welcome3 from "./screens/welcome/Welcome3";
 import Welcome4 from "./screens/welcome/Welcome4";
-
+import Login from "./screens/Login";
+import Signup from "./screens/Signup";
+import ForgetPassword from "./screens/ForgetPassword";
 enableScreens();
 
 import { NavigationContainer } from "@react-navigation/native";
@@ -22,10 +24,13 @@ export default function App() {
           animation: "slide_from_right",
         }}
       >
+        <Stack.Screen name="Login" component={Login} />
+        <Stack.Screen name="Signup" component={Signup} />
         <Stack.Screen name="Welcome1" component={Welcome1} />
         <Stack.Screen name="Welcome2" component={Welcome2} />
         <Stack.Screen name="Welcome3" component={Welcome3} />
         <Stack.Screen name="Welcome4" component={Welcome4} />
+        <Stack.Screen name="ForgetPassword" component={ForgetPassword} />
       </Stack.Navigator>
     </NavigationContainer>
   );

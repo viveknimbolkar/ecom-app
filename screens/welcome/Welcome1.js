@@ -1,4 +1,12 @@
-import { StyleSheet, View, Text, Image, Dimensions, TouchableOpacity } from "react-native";
+import {
+  StyleSheet,
+  View,
+  Text,
+  Image,
+  Dimensions,
+  TouchableOpacity,
+} from "react-native";
+import Entypo from "react-native-vector-icons/Entypo";
 
 export default function Welcome1({ navigation }) {
   return (
@@ -17,8 +25,23 @@ export default function Welcome1({ navigation }) {
               The One-stop Shopping Destination. E-commerce is revolutionizing
               the way we all shop in India.
             </Text>
-            <TouchableOpacity style={styles.nextbtn} onPress={()=>{navigation.navigate("Welcome2")}}>
-              <Text>Next</Text>
+            <View style={styles.indicatiors}>
+              <Entypo
+                style={{ fontSize: 34, color: "red" }}
+                size={13}
+                name="minus"
+              ></Entypo>
+              <Entypo style={styles.indicate} size={13} name="minus"></Entypo>
+              <Entypo style={styles.indicate} size={13} name="minus"></Entypo>
+              <Entypo style={styles.indicate} size={13} name="minus"></Entypo>
+            </View>
+            <TouchableOpacity
+              style={styles.nextbtn}
+              onPress={() => {
+                navigation.navigate("Welcome2");
+              }}
+            >
+              <Text>Next {">"}</Text>
             </TouchableOpacity>
           </View>
         </View>
@@ -54,12 +77,17 @@ const styles = StyleSheet.create({
     fontSize: 16,
   },
   nextbtn: {
-    justifyContent: 'center',
-    alignItems:'center',
-    marginTop: 100,
-    marginLeft:120,
+    justifyContent: "center",
+    alignItems: "center",
+    marginTop: 50,
+    marginLeft: 120,
     width: 140,
     height: 50,
-    borderWidth:1
-  }
+    borderWidth: 1,
+  },
+  indicatiors: {
+    marginTop: 50,
+    flexDirection: "row",
+  },
+  indicate: { fontSize: 34, color: "#32064A" },
 });
