@@ -37,6 +37,7 @@ export default function HomeBottomTab() {
           // You can return any component that you like here!
           return <Ionicons name={iconName} size={size} color={color} />;
         },
+        tabBarActiveTintColor:"#EB4511"
       })}
     >
       <Tab.Screen name="Home" component={HomePage} />
