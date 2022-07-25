@@ -11,6 +11,7 @@ import {
 import { Avatar } from "react-native-paper";
 import ImageSlider from "../../components/ImageSlider";
 import ProductCard from "../../components/ProductCard";
+import SmallProductCard from "../../components/SmallProductCard";
 
 export default function HomePage({ naivgation }) {
   // setting up the images for slider
@@ -177,6 +178,62 @@ export default function HomePage({ naivgation }) {
               </View>
             </View>
           </ScrollView>
+
+          <View style={styles.productGrid}>
+            <View style={styles.productRow}>
+              <SmallProductCard
+                productImage={{ uri: productImgList.earbud }}
+                productName="boAt Airdopes 191G "
+                productDesc="6mm Dual Drivers, Quad Mics ENx Tech & Beast Mode for Gaming"
+                productPrice="1,799"
+              />
+              <SmallProductCard
+                productImage={{ uri: productImgList.earbud }}
+                productName="boAt Airdopes 191G "
+                productDesc="6mm Dual Drivers, Quad Mics ENx Tech & Beast Mode for Gaming"
+                productPrice="1,799"
+              />
+            </View><View style={styles.productRow}>
+              <SmallProductCard
+                productImage={{ uri: productImgList.earbud }}
+                productName="boAt Airdopes 191G "
+                productDesc="6mm Dual Drivers, Quad Mics ENx Tech & Beast Mode for Gaming"
+                productPrice="1,799"
+              />
+              <SmallProductCard
+                productImage={{ uri: productImgList.earbud }}
+                productName="boAt Airdopes 191G "
+                productDesc="6mm Dual Drivers, Quad Mics ENx Tech & Beast Mode for Gaming"
+                productPrice="1,799"
+              />
+            </View><View style={styles.productRow}>
+              <SmallProductCard
+                productImage={{ uri: productImgList.earbud }}
+                productName="boAt Airdopes 191G "
+                productDesc="6mm Dual Drivers, Quad Mics ENx Tech & Beast Mode for Gaming"
+                productPrice="1,799"
+              />
+              <SmallProductCard
+                productImage={{ uri: productImgList.earbud }}
+                productName="boAt Airdopes 191G "
+                productDesc="6mm Dual Drivers, Quad Mics ENx Tech & Beast Mode for Gaming"
+                productPrice="1,799"
+              />
+            </View><View style={styles.productRow}>
+              <SmallProductCard
+                productImage={{ uri: productImgList.earbud }}
+                productName="boAt Airdopes 191G "
+                productDesc="6mm Dual Drivers, Quad Mics ENx Tech & Beast Mode for Gaming"
+                productPrice="1,799"
+              />
+              <SmallProductCard
+                productImage={{ uri: productImgList.earbud }}
+                productName="boAt Airdopes 191G "
+                productDesc="6mm Dual Drivers, Quad Mics ENx Tech & Beast Mode for Gaming"
+                productPrice="1,799"
+              />
+            </View>
+          </View>
         </ScrollView>
       </View>
     </>
@@ -206,9 +263,9 @@ const styles = StyleSheet.create({
   },
   mainCategoriesSection: {
     backgroundColor: "#EB4511",
-    margin: 10,
+    margin: 5,
     borderRadius: 10,
-    padding: 10,
+    padding: 5,
   },
   categoriesSection: {
     padding: 10,
@@ -228,6 +285,10 @@ const styles = StyleSheet.create({
     margin: 10,
   },
   productSection: {
+    flexDirection: "row",
+  },
+  productGrid: {},
+  productRow: {
     flexDirection: "row",
   },
 });

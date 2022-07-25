@@ -1,7 +1,7 @@
 import { StyleSheet } from "react-native";
 import { Card, Title, Paragraph } from "react-native-paper";
 
-export default function Product(props) {
+export default function SmallProductCard(props) {
   return (
     <>
       <Card style={styles.card}>
@@ -21,17 +21,20 @@ export default function Product(props) {
 
 const styles = StyleSheet.create({
   card: {
-    width: 200,
+    width: 170,
     margin: 5,
   },
   cardTitle: {
-    fontSize: 18,
+    marginTop: 8,
+    fontSize: 14,
+    lineHeight: 14,
   },
   cardParagraph: {
-    fontSize: 12,
+    fontSize: 10,
+    lineHeight: 12,
   },
   cardPrice: {
     fontWeight: "700",
-    fontSize: 18,
+    fontSize: 14,
   },
 });
