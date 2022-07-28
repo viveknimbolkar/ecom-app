@@ -2,7 +2,7 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import Categories from "../screens/Home/Categories";
 import Notifications from "../screens/Home/Notifications";
 import Account from "../screens/Home/Account/Account";
-import Cart from "../screens/Home/Notifications";
+import Cart from "../screens/Home/Cart";
 import HomePage from "../screens/Home/HomePage";
 
 import Ionicons from "react-native-vector-icons/Ionicons";
@@ -37,7 +37,7 @@ export default function HomeBottomTab() {
           // You can return any component that you like here!
           return <Ionicons name={iconName} size={size} color={color} />;
         },
-        tabBarActiveTintColor:"#EB4511"
+        tabBarActiveTintColor: "#EB4511",
       })}
     >
       <Tab.Screen name="Home" component={HomePage} />

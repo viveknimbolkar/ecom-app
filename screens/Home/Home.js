@@ -1,5 +1,5 @@
 import { createDrawerNavigator } from "@react-navigation/drawer";
-import HomeDrawerNavigation from "../../Routes/HomeDrawerNavigation";
+import HomeDrawerNavigation from "../../routes/HomeDrawerNavigation";
 export default function Home() {
   return (
     <>
