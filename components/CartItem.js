@@ -1,7 +1,7 @@
 import { StyleSheet, View, Text, Image, TouchableOpacity } from "react-native";
 import { Picker } from "@react-native-picker/picker";
 import { useState } from "react";
-import DialogInput from 'react-native-dialog-input';
+import DialogInput from "react-native-dialog-input";
 export default function CartItem() {
   const [selectedLanguage, setSelectedLanguage] = useState();
 
@@ -27,6 +27,10 @@ export default function CartItem() {
             <Picker.Item label="4" value="4" />
             <Picker.Item label="5" value="5" />
             <Picker.Item label="6" value="6" />
+            <Picker.Item label="7" value="7" />
+            <Picker.Item label="8" value="8" />
+            <Picker.Item label="9" value="9" />
+            <Picker.Item label="10" value="10" />
           </Picker>
         </View>
         <View style={styles.cardBodySection}>
@@ -37,14 +41,7 @@ export default function CartItem() {
           </Text>
           <Text style={styles.cartPrice}>Rs. 56,349</Text>
           <Text style={styles.cartAdditionalDesc}>Free Delivery</Text>
-          <View>
-            <DialogInput
-              isDialogVisible={true}
-              title={"DialogInput 1"}
-              message={"Message for DialogInput #1"}
-              hintInput={"HINT INPUT"}
-            ></DialogInput>
-          </View>
+          <View></View>
         </View>
       </View>
     </>
