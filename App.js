@@ -11,6 +11,8 @@ import SelectEmail from "./screens/forgetpassword/SelectEmail";
 import OTP from "./screens/forgetpassword/OTP";
 import ChangePassword from "./screens/forgetpassword/ChangePassword";
 import Home from "./screens/Home/Home";
+import Search from "./screens/Home/Search";
+import About from "./screens/Home/Company/About";
 
 enableScreens();
 
@@ -30,6 +32,8 @@ export default function App() {
           }}
         >
           <Stack.Screen name="Home" component={Home} />
+        <Stack.Screen name="About" component={About} />
+          <Stack.Screen name="Search" component={Search} />
           <Stack.Screen name="Welcome1" component={Welcome1} />
           <Stack.Screen name="Welcome2" component={Welcome2} />
           <Stack.Screen name="Welcome3" component={Welcome3} />

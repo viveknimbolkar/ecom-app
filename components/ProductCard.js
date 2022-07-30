@@ -8,8 +8,8 @@ export default function Product(props) {
         <Card.Cover style={styles.cardImg} source={props.productImage} />
         {/* <Card.Title title={props.productName} subtitle={props.productDesc} /> */}
         <Card.Content>
-          <Title style={styles.cardTitle}>{props.productName}</Title>
-          <Paragraph style={styles.cardParagraph}>
+          <Title numberOfLines={1} style={styles.cardTitle}>{props.productName}</Title>
+          <Paragraph numberOfLines={2} style={styles.cardParagraph}>
             {props.productDesc}
           </Paragraph>
           <Title style={styles.cardPrice}>Rs. {props.productPrice}</Title>
@@ -26,6 +26,7 @@ const styles = StyleSheet.create({
   },
   cardTitle: {
     fontSize: 18,
+    lineHeight: 22,
   },
   cardParagraph: {
     fontSize: 12,

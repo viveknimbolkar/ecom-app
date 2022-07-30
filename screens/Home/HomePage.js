@@ -6,6 +6,7 @@ import {
   Text,
   TextInput,
   ScrollView,
+  Button,
 } from "react-native";
 
 import { Avatar } from "react-native-paper";
@@ -193,7 +194,8 @@ export default function HomePage({ naivgation }) {
                 productDesc="6mm Dual Drivers, Quad Mics ENx Tech & Beast Mode for Gaming"
                 productPrice="1,799"
               />
-            </View><View style={styles.productRow}>
+            </View>
+            <View style={styles.productRow}>
               <SmallProductCard
                 productImage={{ uri: productImgList.earbud }}
                 productName="boAt Airdopes 191G "
@@ -206,7 +208,8 @@ export default function HomePage({ naivgation }) {
                 productDesc="6mm Dual Drivers, Quad Mics ENx Tech & Beast Mode for Gaming"
                 productPrice="1,799"
               />
-            </View><View style={styles.productRow}>
+            </View>
+            <View style={styles.productRow}>
               <SmallProductCard
                 productImage={{ uri: productImgList.earbud }}
                 productName="boAt Airdopes 191G "
@@ -219,7 +222,8 @@ export default function HomePage({ naivgation }) {
                 productDesc="6mm Dual Drivers, Quad Mics ENx Tech & Beast Mode for Gaming"
                 productPrice="1,799"
               />
-            </View><View style={styles.productRow}>
+            </View>
+            <View style={styles.productRow}>
               <SmallProductCard
                 productImage={{ uri: productImgList.earbud }}
                 productName="boAt Airdopes 191G "
