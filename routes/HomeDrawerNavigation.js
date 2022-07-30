@@ -2,6 +2,7 @@ import { StatusBar } from "react-native";
 import HomeBottomTab from "./HomeBottomTab";
 import { createDrawerNavigator } from "@react-navigation/drawer";
 import About from "../screens/Home/Company/About";
+import Contact from "../screens/Home/Company/Contact";
 
 const Drawer = createDrawerNavigator();
 
@@ -18,8 +19,9 @@ export default function Home() {
         }}
       >
         {/* conflict may be happen because of the same route name as Home */}
-        <Drawer.Screen name="Home " component={HomeBottomTab} />
-        <Drawer.Screen name="About " component={About} />
+        <Drawer.Screen name="Home" component={HomeBottomTab} />
+        <Drawer.Screen name="About" component={About} />
+        <Drawer.Screen name="Contact" component={Contact} />
       </Drawer.Navigator>
     </>
   );
