@@ -32,13 +32,13 @@ export default function App() {
           }}
         >
           <Stack.Screen name="Home" component={Home} />
-        <Stack.Screen name="About" component={About} />
-          <Stack.Screen name="Search" component={Search} />
           <Stack.Screen name="Welcome1" component={Welcome1} />
+          <Stack.Screen name="Login" component={Login} />
+          <Stack.Screen name="About" component={About} />
+          <Stack.Screen name="Search" component={Search} />
           <Stack.Screen name="Welcome2" component={Welcome2} />
           <Stack.Screen name="Welcome3" component={Welcome3} />
           <Stack.Screen name="Welcome4" component={Welcome4} />
-          <Stack.Screen name="Login" component={Login} />
           <Stack.Screen name="Signup" component={Signup} />
           <Stack.Screen name="SelectEmail" component={SelectEmail} />
           <Stack.Screen name="OTP" component={OTP} />

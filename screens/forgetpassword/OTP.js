@@ -11,6 +11,8 @@ import {
   TouchableWithoutFeedback,
   Keyboard,
 } from "react-native";
+
+const properties = require("../../properties.json");
 export default function SelectEmail({ navigation }) {
   const [otp, setotp] = useState("");
   return (
@@ -21,6 +23,8 @@ export default function SelectEmail({ navigation }) {
           An OTP is sent to your registered email id. Please enter your OTP.
         </Text>
         <TextInput
+          outlineColor={properties.colors.orange}
+          activeOutlineColor={properties.colors.orange}
           style={styles.otp}
           mode="outlined"
           label="OTP"
@@ -67,9 +71,11 @@ const styles = StyleSheet.create({
     height: 50,
     justifyContent: "center",
     marginTop: 20,
+    backgroundColor:properties.colors.orange,
   },
   loginbtn: {
     marginTop: 20,
+
   },
   logintext: {
     color: "blue",

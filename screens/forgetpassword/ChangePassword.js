@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { TextInput, Button } from "react-native-paper";
+
+const properties = require("../../properties.json");
 import {
   StyleSheet,
   View,
@@ -24,6 +26,8 @@ export default function SelectEmail({ navigation }) {
           Your new password must be different from previous used password
         </Text>
         <TextInput
+          outlineColor={properties.colors.orange}
+          activeOutlineColor={properties.colors.orange}
           secureTextEntry={passwordVisible}
           mode="outlined"
           right={
@@ -40,6 +44,8 @@ export default function SelectEmail({ navigation }) {
           onChangeText={(password) => setPassword(password)}
         />
         <TextInput
+          outlineColor={properties.colors.orange}
+          activeOutlineColor={properties.colors.orange}
           secureTextEntry={passwordCVisible}
           mode="outlined"
           right={
@@ -64,7 +70,7 @@ export default function SelectEmail({ navigation }) {
         </Button>
         <TouchableOpacity
           onPress={() => navigation.navigate("Login")}
-          style={styles.loginbtn}
+          style={{ marginTop: 20 }}
         >
           <Text style={styles.logintext}>
             I don't want to change my password? Continue to login
@@ -95,6 +101,7 @@ const styles = StyleSheet.create({
     height: 50,
     justifyContent: "center",
     marginTop: 20,
+    backgroundColor: properties.colors.orange,
   },
   logintext: {
     color: "blue",

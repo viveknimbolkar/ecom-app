@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { TextInput, Button } from "react-native-paper";
 
+const properties = require("../../properties.json");
 import {
   View,
   KeyboardAvoidingView,
@@ -33,6 +34,8 @@ export default function Signup({ navigation }) {
             Create a new account to continue shopping
           </Text>
           <TextInput
+            outlineColor={properties.colors.orange}
+            activeOutlineColor={properties.colors.orange}
             style={styles.common}
             mode="outlined"
             label="Fullname"
@@ -40,6 +43,8 @@ export default function Signup({ navigation }) {
             onChangeText={(name) => setName(name)}
           />
           <TextInput
+            outlineColor={properties.colors.orange}
+            activeOutlineColor={properties.colors.orange}
             style={styles.common}
             mode="outlined"
             label="Email"
@@ -47,6 +52,8 @@ export default function Signup({ navigation }) {
             onChangeText={(email) => setEmail(email)}
           />
           <TextInput
+            outlineColor={properties.colors.orange}
+            activeOutlineColor={properties.colors.orange}
             secureTextEntry={passwordVisible}
             mode="outlined"
             right={
@@ -63,6 +70,8 @@ export default function Signup({ navigation }) {
             onChangeText={(password) => setPassword(password)}
           />
           <TextInput
+            outlineColor={properties.colors.orange}
+            activeOutlineColor={properties.colors.orange}
             secureTextEntry={passwordCVisible}
             mode="outlined"
             right={
@@ -139,6 +148,7 @@ const styles = StyleSheet.create({
     marginTop: 20,
     height: 50,
     justifyContent: "center",
+    backgroundColor: properties.colors.orange,
   },
   logintext: {
     marginTop: 20,

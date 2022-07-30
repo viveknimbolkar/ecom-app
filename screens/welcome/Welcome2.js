@@ -7,6 +7,7 @@ import {
   TouchableOpacity,
 } from "react-native";
 
+const properties = require("../../properties.json");
 import Entypo from "react-native-vector-icons/Entypo";
 export default function Welcome2({ navigation }) {
   return (
@@ -70,7 +71,7 @@ const styles = StyleSheet.create({
   cardhead: {
     fontSize: 28,
     fontWeight: "700",
-    color: "#EB4511",
+    color: properties.colors.orange,
   },
   carddesc: {
     marginTop: 10,

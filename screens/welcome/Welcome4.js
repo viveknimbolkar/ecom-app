@@ -9,6 +9,8 @@ import {
 
 import Entypo from "react-native-vector-icons/Entypo";
 
+const properties = require("../../properties.json");
+
 export default function Welcome4({ navigation }) {
   return (
     <>
@@ -68,7 +70,7 @@ const styles = StyleSheet.create({
   cardhead: {
     fontSize: 28,
     fontWeight: "700",
-    color: "#EB4511",
+    color: properties.colors.orange,
   },
   carddesc: {
     marginTop: 10,
@@ -80,7 +82,7 @@ const styles = StyleSheet.create({
     marginTop: 50,
     width: 300,
     height: 50,
-    backgroundColor: "#EB4511",
+    backgroundColor: properties.colors.orange,
   },
   startbtn: {
     color: "white",

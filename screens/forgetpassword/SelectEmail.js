@@ -11,6 +11,8 @@ import {
   TouchableWithoutFeedback,
   Keyboard,
 } from "react-native";
+
+const properties = require("../../properties.json");
 export default function SelectEmail({ navigation }) {
   const [email, setEmail] = useState("");
   return (
@@ -22,6 +24,8 @@ export default function SelectEmail({ navigation }) {
           with instructions to reset your password.
         </Text>
         <TextInput
+          outlineColor={properties.colors.orange}
+          activeOutlineColor={properties.colors.orange}
           style={styles.email}
           mode="outlined"
           label="Email"
@@ -68,13 +72,14 @@ const styles = StyleSheet.create({
     height: 50,
     justifyContent: "center",
     marginTop: 20,
+    backgroundColor: properties.colors.orange,
   },
-    loginbtn: {
-      marginTop:20,
+  loginbtn: {
+    marginTop: 20,
   },
-    logintext: {
-        color:'blue',
-        fontSize: 17,
-        alignSelf:'center'
+  logintext: {
+    color: "blue",
+    fontSize: 17,
+    alignSelf: "center",
   },
 });

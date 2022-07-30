@@ -12,6 +12,7 @@ import {
   Keyboard,
 } from "react-native";
 
+const properties = require("../../properties.json");
 export default function Login({ navigation }) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -29,6 +30,8 @@ export default function Login({ navigation }) {
             </Text>
 
             <TextInput
+              outlineColor={properties.colors.orange}
+              activeOutlineColor={properties.colors.orange}
               style={styles.email}
               mode="outlined"
               label="Email"
@@ -36,6 +39,8 @@ export default function Login({ navigation }) {
               onChangeText={(email) => setEmail(email)}
             />
             <TextInput
+              outlineColor={properties.colors.orange}
+              activeOutlineColor={properties.colors.orange}
               secureTextEntry={passwordVisible}
               mode="outlined"
               right={
@@ -108,6 +113,7 @@ const styles = StyleSheet.create({
     height: 60,
     alignContent: "center",
     justifyContent: "center",
+    backgroundColor: properties.colors.orange,
   },
   forgetpassword: {
     alignItems: "flex-end",

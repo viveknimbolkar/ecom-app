@@ -7,6 +7,7 @@ import {
   TouchableOpacity,
 } from "react-native";
 
+const properties = require("../../properties.json");
 import Entypo from "react-native-vector-icons/Entypo";
 export default function Welcome3({ navigation }) {
   return (
@@ -22,7 +23,8 @@ export default function Welcome3({ navigation }) {
           <View style={styles.body}>
             <Text style={styles.cardhead}>Shopping Cart</Text>
             <Text style={styles.carddesc}>
-             Save your product in a cart to purchase them in future. Dont't worry your cart is totally safe from outside the world.
+              Save your product in a cart to purchase them in future. Dont't
+              worry your cart is totally safe from outside the world.
             </Text>
             <View style={styles.indicatiors}>
               <Entypo style={styles.indicate} size={13} name="minus"></Entypo>
@@ -40,7 +42,7 @@ export default function Welcome3({ navigation }) {
                 navigation.navigate("Welcome4");
               }}
             >
-              <Text>Next  {">"}</Text>
+              <Text>Next {">"}</Text>
             </TouchableOpacity>
           </View>
         </View>
@@ -69,7 +71,7 @@ const styles = StyleSheet.create({
   cardhead: {
     fontSize: 28,
     fontWeight: "700",
-    color: "#EB4511",
+    color: properties.colors.orange,
   },
   carddesc: {
     marginTop: 10,
@@ -83,7 +85,8 @@ const styles = StyleSheet.create({
     width: 140,
     height: 50,
     borderWidth: 1,
-  },indicatiors: {
+  },
+  indicatiors: {
     marginTop: 50,
     flexDirection: "row",
   },

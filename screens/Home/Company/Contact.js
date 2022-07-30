@@ -47,8 +47,8 @@ export default function Contact({ navigation }) {
             value={email}
             onChangeText={(email) => setEmail(email)}
           />
-                  <TextInput
-                      outlineColor={properties.colors.orange}
+          <TextInput
+            outlineColor={properties.colors.orange}
             activeOutlineColor={properties.colors.orange}
             style={[styles.common, { height: 150 }]}
             multiline
