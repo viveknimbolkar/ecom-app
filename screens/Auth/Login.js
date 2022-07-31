@@ -13,6 +13,7 @@ import {
 } from "react-native";
 
 const properties = require("../../properties.json");
+
 export default function Login({ navigation }) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -66,7 +67,7 @@ export default function Login({ navigation }) {
               style={styles.loginbtn}
               icon="login"
               mode="contained"
-              onPress={() => console.log("Pressed")}
+              onPress={() => { console.log("Login btn Pressed"); navigation.navigate("Home")}}
             >
               Login to continue
             </Button>

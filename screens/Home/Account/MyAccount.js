@@ -1,9 +1,8 @@
 import { StyleSheet, View, Dimensions, Text, ScrollView } from "react-native";
 import { Avatar, List } from "react-native-paper";
-
 import Ionicons from "react-native-vector-icons/Ionicons";
 
-export default function Account({ naivgation }) {
+export default function MyAccount({ navigation }) {
   return (
     <>
       <View style={styles.maincontainer}>
@@ -33,7 +32,12 @@ export default function Account({ naivgation }) {
               <Ionicons name={"clipboard-outline"} size={25} color={"gray"} />
               <Text style={styles.profileOptionName}>Wishlist</Text>
             </View>
-            <View style={styles.profileOption}>
+            <View
+              onTouchStart={() => {
+                navigation.navigate("Notifications");
+              }}
+              style={styles.profileOption}
+            >
               <Ionicons
                 name={"notifications-outline"}
                 size={25}
@@ -44,18 +48,30 @@ export default function Account({ naivgation }) {
           </View>
           <View style={styles.menuContainer}>
             <List.Item
-              title="My Account"
+              onPress={() => {
+                navigation.navigate("EditMyAccount");
+              }}
+              title="Edit My Account"
               left={(props) => <List.Icon icon="account" />}
             />
             <List.Item
+               onPress={() => {
+                navigation.navigate("ReferAndEarn");
+              }}
               title="Refer and Earn"
               left={(props) => <List.Icon icon="account-cash" />}
             />
             <List.Item
+               onPress={() => {
+                navigation.navigate("Address");
+              }}
               title="My Addresses"
               left={(props) => <List.Icon icon="home" />}
             />
             <List.Item
+              onPress={() => {
+                navigation.navigate("Settings");
+              }}
               title="Settings"
               left={(props) => <List.Icon icon="cog" />}
             />

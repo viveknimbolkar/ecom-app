@@ -19,7 +19,7 @@ export default function Home() {
         }}
       >
         {/* conflict may be happen because of the same route name as Home */}
-        <Drawer.Screen name="Home" component={HomeBottomTab} />
+        <Drawer.Screen name="HomeTab" component={HomeBottomTab} />
         <Drawer.Screen name="About" component={About} />
         <Drawer.Screen name="Contact" component={Contact} />
       </Drawer.Navigator>

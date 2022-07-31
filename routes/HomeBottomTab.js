@@ -1,11 +1,10 @@
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import Categories from "../screens/Home/Categories";
 import Notifications from "../screens/Home/Notifications";
-import Account from "../screens/Home/Account/Account";
 import Cart from "../screens/Home/Cart";
 import HomePage from "../screens/Home/HomePage";
-
 import Ionicons from "react-native-vector-icons/Ionicons";
+import AccountTabToStack from "./AccountTabToStack";
 
 const Tab = createBottomTabNavigator();
 
@@ -43,7 +42,7 @@ export default function HomeBottomTab() {
       <Tab.Screen name="Home" component={HomePage} />
       <Tab.Screen name="Categories" component={Categories} />
       <Tab.Screen name="Notifications" component={Notifications} />
-      <Tab.Screen name="Account" component={Account} />
+      <Tab.Screen name="Account" component={AccountTabToStack} />
       <Tab.Screen name="Cart" component={Cart} />
     </Tab.Navigator>
   );
