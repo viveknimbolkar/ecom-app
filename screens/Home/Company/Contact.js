@@ -99,12 +99,12 @@ const styles = StyleSheet.create({
     marginTop: 20,
     height: 50,
     justifyContent: "center",
-    backgroundColor: "#EB4511",
+    backgroundColor: properties.colors.orange,
   },
   logintext: {
     marginTop: 20,
     fontSize: 16,
     alignSelf: "center",
-    color: "#EB4511",
+    color: properties.colors.orange,
   },
 });

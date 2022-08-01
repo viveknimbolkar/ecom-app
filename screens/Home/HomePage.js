@@ -13,7 +13,7 @@ import { Avatar } from "react-native-paper";
 import ImageSlider from "../../components/ImageSlider";
 import ProductCard from "../../components/ProductCard";
 import SmallProductCard from "../../components/SmallProductCard";
-
+const properties = require("../../properties.json")
 export default function HomePage({ naivgation }) {
   // setting up the images for slider
   const imagesList = [
@@ -251,7 +251,7 @@ const styles = StyleSheet.create({
   },
   headersection: {
     flexDirection: "row",
-    backgroundColor: "#EB4511",
+    backgroundColor: properties.colors.orange,
     padding: 10,
     justifyContent: "center",
   },
@@ -266,7 +266,7 @@ const styles = StyleSheet.create({
     fontSize: 18,
   },
   mainCategoriesSection: {
-    backgroundColor: "#EB4511",
+    backgroundColor: properties.colors.orange,
     margin: 5,
     borderRadius: 10,
     padding: 5,

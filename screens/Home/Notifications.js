@@ -8,7 +8,7 @@ import {
   LogBox,
 } from "react-native";
 import Swipeable from "react-native-swipeable";
-
+const properties = require("../../properties.json")
 import Ionicons from "react-native-vector-icons/Ionicons";
 
 LogBox.ignoreLogs([
@@ -141,7 +141,7 @@ export default function Notifications({ naivgation }) {
 const styles = StyleSheet.create({
   container: {},
   mainHeading: {
-    backgroundColor: "#EB4511",
+    backgroundColor: properties.colors.orange,
     alignItems: "center",
     padding: 10,
   },
@@ -163,7 +163,7 @@ const styles = StyleSheet.create({
   },
   description: {},
   btnActionContainer: {
-    backgroundColor: "#EB4511",
+    backgroundColor: properties.colors.orange,
     height: "130%",
     justifyContent: "center",
     marginTop: -10,

@@ -6,7 +6,7 @@ import {
   TouchableOpacity,
 } from "react-native";
 import CartItem from "../../components/CartItem";
-
+const properties = require("../../properties.json")
 export default function Cart({ naivgation }) {
   return (
     <>
@@ -47,7 +47,7 @@ export default function Cart({ naivgation }) {
 const styles = StyleSheet.create({
   container: {},
   mainHeading: {
-    backgroundColor: "#EB4511",
+    backgroundColor: properties.colors.orange,
     alignItems: "center",
     padding: 10,
   },
@@ -76,7 +76,7 @@ const styles = StyleSheet.create({
     fontSize:10,
   },
   placeOrderBtn: {
-    backgroundColor: "#EB4511",
+    backgroundColor: properties.colors.orange,
     padding:10
   },
   placeOrderBtnText: {

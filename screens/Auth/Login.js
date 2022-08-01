@@ -130,6 +130,6 @@ const styles = StyleSheet.create({
   },
   accounttext: {
     fontSize: 15,
-    color: "#EB4511",
+    color: properties.colors.orange,
   },
 });

@@ -118,11 +118,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
   },
-  // inner: {
-  //   padding: 24,
-  //   flex: 1,
-  //   justifyContent: "space-around",
-  // },
   inner: {
     padding: 20,
   },
@@ -154,6 +149,6 @@ const styles = StyleSheet.create({
     marginTop: 20,
     fontSize: 16,
     alignSelf: "center",
-    color: "#EB4511",
+    color: properties.colors.orange,
   },
 });
